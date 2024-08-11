@@ -15,7 +15,7 @@ Follow the below steps to Install the Terraform and another dependency.
 
 1️⃣ Clone the repo
 
-``` git clone https://github.com/piyushsachdeva/10weeksofcloudops-week4-tf.git ```
+``` git clone https://github.com/tohidhanfi20/tf_code ```
 
 2️⃣ Let's install dependency to deploy the application
 
@@ -33,10 +33,10 @@ add below code
 ```
 terraform {
   backend "s3" {
-    bucket = "S3-BUCKET-NAME"
+    bucket = "tohidprojects"
     key    = "backend/TFSTATE-FILE.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "DYNAMODB-TABLE-NAME"
+    region = "ap-south-1"
+    dynamodb_table = "tohidprojects-dynamo"
   }
 }
 ```
@@ -70,9 +70,9 @@ type yes, and it will prompt you for permission or use --auto-approve in the com
 
 **This project contains Three GitHub repositories**
 
-➡️ [App Code] (https://github.com/piyushsachdeva/AppCode)
+➡️ [App Code] (https://github.com/tohidhanfi20/AppCode)
 
-➡️ [Terraform code] (https://github.com/piyushsachdeva/10weeksofcloudops-week4-tf)
+➡️ [Terraform code] (https://github.com/tohidhanfi20/tf_code)
 
-➡️ [Manifest Repo] (https://github.com/piyushsachdeva/kube_manifest)
+➡️ [Manifest Repo] (https://github.com/tohidhanfi20/kube_manifest)
 # tf_code
